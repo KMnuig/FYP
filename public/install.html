@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>SET installation</title>
+      <link rel="stylesheet" type="text/css" href="/stylesheets/nav.css">
+      <link rel="icon" type="image/png" href="/images/favicon.ico">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <div class="mynav">
+         <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="">SET Tutorial</a>
+               </div>
+               <ul class="nav navbar-nav">
+                  <li><a href="/index.html">Home</a></li>
+                  <li class="active"><a href="/install.html">SET Install</a></li>
+                  <li><a href="/walkthrough.html">Walkthrough</a></li>
+                  <li><a href="/moodle.html">Test Your Knowledge</a></li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+      <br><br>
+      <div class="jumbotron text-center">
+         <h1>Install SET on your enviroment</h1>
+         <p>Select an OS and continue from there</p>
+      </div>
+      <div id ="CF" class="container">
+         <!--row1-->
+         <div class="row">
+            <h2><b>Click your OS and begin installation guide</b></h2>
+            <div class="col-sm-4">
+               <h3>Windows</h3>
+               <button type="button" class="btn btn-primary btn-lg" onClick="document.getElementById('windows').scrollIntoView();window.scrollBy(0, -50);">Windows Install</button>
+            </div>
+            <div class="col-sm-4">
+               <h3>Linux</h3>
+               <button type="button" class="btn btn-primary btn-lg" onClick="document.getElementById('linux').scrollIntoView();window.scrollBy(0, -50);">Linux Install</button>
+            </div>
+            <div class="col-sm-4">
+               <h3>Mac</h3>
+               <button type="button" class="btn btn-primary btn-lg" onClick="document.getElementById('mac').scrollIntoView();window.scrollBy(0, -50);">MAC Install</button>
+            </div>
+         </div>
+         <!--row2-->
+         <div class="row">
+            <div id="linux" class="col-sm-10 col-sm-offset-1">
+               <h3>Linux installation</h3>
+               <h4 id="ptxt">Prerequisite </h4>
+               <p align="left">Download Metasploit <code>optional</code> <a href="https://github.com/rapid7/metasploit-framework/wiki/Nightly-Installers"><span class="glyphicon glyphicon-new-window"></span></a><br>
+               </p>
+               <br>
+               <h4 id="ptxt">For Ubuntu/Debian OS </h4>
+               <p class="well">$ apt-get --force-yes -y install git apache2 python-requests libapache2-mod-php \
+                  python-pymssql build-essential python-pexpect python-pefile python-crypto python-openssl
+               </p>
+               <br>
+               <h4 id="ptxt">For Arch OS </h4>
+               <p class="well">$ pacman -S --noconfirm --needed git python2 python2-beautifulsoup4 python2-pexpect python2-crypto
+                  <br>$ wget https://github.com/erocarrera/pefile/archive/master.zip && unzip master.zip
+                  <br>$ chmod a+x pefile-master/setup.py && rm -rf pefile-master*
+               </p>
+               <br>
+               <h4 id="ptxt">For Cent OS </h4>
+               <p  class="well">$ yum update -y && yum install python-pexpect python-crypto python-openssl python-pefile</p>
+               <br>
+               <h4 id="ptxt">For Fedora OS </h4>
+               <p  class="well">$ dnf -y install git python-pexpect python-pefile python-crypto pyOpenSSL</p>
+               <br>
+            </div>
+         </div>
+         <!--row3-->
+         <div class="row">
+            <div id="mac" class="col-sm-10 col-sm-offset-1">
+               <h3 id="mach3">Mac installation</h3>
+               <h4 id="ptxt">Prerequisite </h4>
+               <p align="left">Download Metasploit <code>optional</code> <a href="https://github.com/rapid7/metasploit-framework/wiki/Nightly-Installers"><span class="glyphicon glyphicon-new-window"></span></a><br>
+               </p>
+               <br>
+               <h4 id="ptxt">For Mac OS X </h4>
+               <p class="well" >$ pip install pexpect pycrypto pyopenssl pefile</p>
+               <br>
+            </div>
+         </div>
+         <!--row4-->
+         <div class="row">
+            <div id="windows" class="col-sm-10 col-sm-offset-1">
+               <h3>Windows installation</h3>
+               <h4 id="ptxt">Prerequisite </h4>
+               <p align="left">Download Python <a href="https://www.python.org/downloads/windows/"><span class="glyphicon glyphicon-new-window"></span></a><br>
+                  Download Git terminal <a href="https://git-scm.com/downloads"><span class="glyphicon glyphicon-new-window"></span></a><br>
+                  Download Metasploit <code>optional</code> <a href="https://github.com/rapid7/metasploit-framework/wiki/Nightly-Installers"><span class="glyphicon glyphicon-new-window"></span></a><br>
+               </p>
+               <br>
+               <h4 id="ptxt">Git terminal</h4>
+               <p class="well">git clone https://github.com/trustedsec/social-engineer-toolkit/ set/</p>
+               <h4 id="ptxt">Cmd</h4>
+               <p class="well">pip install pycryptodome<br>cd /set <code>can change depending where you cloned the setoolkit to</code><br>
+                  python setoolkit
+               </p>
+               <br>
+               <br>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

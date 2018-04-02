@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Walkthrough</title>
+      <link rel="icon" type="image/png" href="/images/favicon.ico">
+      <link rel="stylesheet" type="text/css" href="/stylesheets/nav.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </head>
+   <div class="mynav">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <a class="navbar-brand">SET Tutorial</a>
+            </div>
+            <ul class="nav navbar-nav">
+               <li><a href="/index.html">Home</a></li>
+               <li><a href="/install.html">SET Install</a></li>
+               <li class="dropdown active">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="/walkthrough.html">Walkthrough<span class="caret"></span></a>
+                  <ul id="dd"class="dropdown-menu">
+                     <li><a onClick="document.getElementById('Start-up').scrollIntoView();window.scrollBy(0, -60);">Start-up</a></li>
+                     <li><a onClick="document.getElementById('SE').scrollIntoView();window.scrollBy(0, -60);">Social Engineering</a></li>
+                     <li><a onClick="document.getElementById('Spear').scrollIntoView();window.scrollBy(0, -60);">Spear-Phishing</a></li>
+                     <li><a onClick="document.getElementById('Infect').scrollIntoView();window.scrollBy(0, -60);">Infectous Media</a></li>
+                     <li><a onClick="document.getElementById('Payload').scrollIntoView();window.scrollBy(0, -60);">Payloads</a></li>
+                     <li><a onClick="document.getElementById('MM').scrollIntoView();window.scrollBy(0, -60);">Mass Mailer</a></li>
+                  </ul>
+               </li>
+               <li><a href="/moodle.html">Test Your Knowledge</a></li>
+            </ul>
+         </div>
+      </nav>
+   </div>
+   <br><br>
+   <div class="jumbotron text-center">
+      <h1>Begin SET Walkthrough</h1>
+      <p>Start from the beginning or jump right in by selecting a sections</p>
+   </div>
+   <div id ="CF" class="container">
+      <!--row1-->
+      <div class="row">
+         <div id="linux" class="col-sm-10 col-sm-offset-1">
+            <h3 id="Start-up">Start up</h3>
+            <div class = "col-sm-6">
+               <h4 id="ptxt">This Walkthrough is done through SET version 7.7.5 installed on an Ubuntu System </h4>
+               <p align="left">Go to the SET folder on your system</p>
+               <p class="well">$ sudo python setoolkit</p>
+               <p align="left">read the T&C's and confirm if you agree you will be presented with the menu option Fig 1.1
+                  press 4 to update the toolkit to the lastest version .
+                  Type <code>1</code> for a list of social enginnering attacks or
+                  type <code>2</code> to go to a short selection of penetration testing.
+                  if you changed values inside the config
+                  files press <code>5</code> to update to the new configuration
+               </p>
+            </div>
+            <div class="col-sm-6">
+               <img src="/images/menu1.PNG"></img>
+               <p>  Fig 1.1</p>
+            </div>
+            <br>
+         </div>
+      </div>
+      <!--end row 1-->
+      <!--row2-->
+      <div class="row">
+         <div id="SE" class="col-sm-10 col-sm-offset-1 linux">
+            <h3>Social Engineering Attacks</h3>
+            <!--row2 sub row 1-->
+            <div class = "col-sm-6">
+               <h4 id="ptxt">Options</h4>
+               <p align="left">There are 11 options in this section as shown in Fig 2.1
+                  <br>Just type the number in of the option you would like. However
+                  at this time some are currently unavailable.
+               </p>
+               <br>
+               <h4 id="ptxt">About each option</h4>
+               <div class="well">
+                  <h4 id="ptxt">1) Spear-phishing</h4>
+                  <p align="left">Spear-phishing is phishing in a targeting manner. Attackers send
+                     fraudulent emails to gather confidential information.This option
+                     allows you send out fraudulent emails.
+                  </p>
+                  <h4 id="ptxt">2) Website attack vectors</h4>
+                  <p align="left">This module allows you to utilize multiple web-based attack
+                     on an intended victim , such as a Credential Harvester or Metasploit browsers
+                     exploit.
+                  </p>
+                  <h4 id="ptxt">3) Infectous media generator</h4>
+                  <p align="left">Create Infectous payloads to be put on a USB/CD/DVD
+                  </p>
+                  <h4 id="ptxt">4) Create a payload and Listener</h4>
+                  <p align="left">Create malware to be used in other modules
+                  </p>
+                  <h4 id="ptxt">5) Mass Mailer</h4>
+                  <p align="left">Send out mass emails to multiple emails
+                  </p>
+                  <h4 id="ptxt">6) Arduino-based Attacks</h4>
+                  <p align="left"><code>Requires additional hardware to use this module</code>
+                  </p>
+                  <h4 id="ptxt">7) Wireless Access Point Attaks</h4>
+                  <p align="left">Send out mass emails to multiple emails
+                  </p>
+                  <h4 id="ptxt">8) QRCode Generator Attaks</h4>
+                  <p align="left">Send out mass emails to multiple emails
+                  </p>
+                  <h4 id="ptxt">9) Powershell Attaks</h4>
+                  <p align="left">Send out mass emails to multiple emails
+                  </p>
+                  <h4 id="ptxt"><code>10) SMS spoofing Attaks</code></h4>
+                  <p align="left"><code>Module Currently unavailable</code>
+                  </p>
+               </div>
+            </div>
+            <div class="col-sm-6">
+               <img src="/images/menu2.PNG"></img>
+               <p>  Fig 2.1</p>
+            </div>
+         </div>
+         <!--end row2 sub row 1-->
+         <br>
+      </div>
+      <div class="row">
+         <div id="Spear" class="col-sm-10 col-sm-offset-1 linux">
+            <h3>Spear-Phishing</h3>
+            <!--row2 sub row 1-->
+            <div class = "col-sm-6">
+               <h4 id="ptxt">Options</h4>
+               <p align="left">There are 11 options in this section as shown in Fig 2.1
+                  <br>Just type the number in of the option you would like
+               </p>
+               <br>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div id="Webatt" class="col-sm-10 col-sm-offset-1 linux">
+            <h3>Website attacks</h3>
+            <!--row2 sub row 1-->
+            <div class = "col-sm-6">
+               <h4 id="ptxt">Options</h4>
+               <p align="left">There are 11 options in this section as shown in Fig 2.1
+                  <br>Just type the number in of the option you would like
+               </p>
+               <br>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div id="Infect" class="col-sm-10 col-sm-offset-1 linux">
+            <h3>Infectous media generator</h3>
+            <!--row2 sub row 1-->
+            <div class = "col-sm-6">
+               <h4 id="ptxt">Options</h4>
+               <p align="left">There are 11 options in this section as shown in Fig 2.1
+                  <br>Just type the number in of the option you would like
+               </p>
+               <br>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div id="Payload" class="col-sm-10 col-sm-offset-1 linux">
+            <h3>Create a payload</h3>
+            <!--row2 sub row 1-->
+            <div class = "col-sm-6">
+               <h4 id="ptxt">Options</h4>
+               <p align="left">There are 11 options in this section as shown in Fig 2.1
+                  <br>Just type the number in of the option you would like
+               </p>
+               <br>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div id="MM" class="col-sm-10 col-sm-offset-1 linux">
+            <h3>Mass Mailer</h3>
+            <!--row2 sub row 1-->
+            <div class = "col-sm-6">
+               <h4 id="ptxt">Options</h4>
+               <p align="left">There are 11 options in this section as shown in Fig 2.1
+                  <br>Just type the number in of the option you would like
+               </p>
+               <br>
+            </div>
+         </div>
+      </div>
+   </div>
+   <br>
+</html>

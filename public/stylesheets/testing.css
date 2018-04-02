@@ -1,0 +1,82 @@
+
+.mynav a{
+    float: left;
+}
+
+.jumbotron {
+  background-image: url("/images/bg2.jpg");
+  background-size:cover;
+  color: white !important;
+  /*text-shadow adds black outline to text to make it pop from images
+    works on most browsers*/
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+.row {
+  text-align: center;
+}
+.col-md-8{
+  background-color: grey;
+}
+.col-sm-10{
+/*  background-color: red;*/
+}
+#CF{
+  background-color: white;
+  border-radius: 25px;
+    border: 2px solid #F5F5F5;
+
+}
+.well{
+  text-align: left;
+}
+/*div with a border and bit of green padded border on the left*/
+#windows h3{
+    padding: 10px;
+     margin: 20px 0;
+    border: 0px solid #006dcc;
+    border-radius: 3px;
+    border-left-width: 5px;
+    background-color: #F5F5F5;
+    color: #006dcc;
+}
+#linux h3{
+  padding: 10px;
+   margin: 20px 0;
+  border: 0px solid #006dcc;
+  border-radius: 3px;
+  border-left-width: 5px;
+  background-color: #F5F5F5;
+  color: #006dcc;
+}
+#mac h3{
+  padding: 10px;
+   margin: 20px 0;
+  border: 0px solid #006dcc;
+  border-radius: 3px;
+  border-left-width: 5px;
+  background-color: #F5F5F5;
+  color: #006dcc;
+}
+#ptxt {
+  color:#006dcc;
+  text-align: left;
+
+}
+#commands{
+  color:black;
+  border: 0px solid #006dcc;
+  border-radius: 3px;
+  background-color: #F5F5F5;
+  text-align: left;
+}
+
+
+/*
+body{
+  background-color: 	#F7F7F7 !important;
+}*/
